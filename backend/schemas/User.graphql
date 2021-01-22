@@ -1,0 +1,47 @@
+type User {
+    id: Int
+    nome: String!
+    email: String!
+    token: String
+    perfis: [Perfil]
+}
+
+input UserInput {
+    nome: String
+    email: String
+    password: String
+    perfis: [PerfilFilter]
+}
+
+input RegisterUserInput {
+    nome: String!
+    email: String!
+    password: String!
+}
+
+input LoginUserFilter {
+    email: String!
+    password: String!
+}
+
+input UserFilter {
+    id: Int
+    email: String
+}
+
+type Perfil {
+    id: Int
+    nome: String!
+    rotulo: String!
+    users: [User]
+}
+
+input PerfilInput {
+    nome: String
+    rotulo: String
+}
+
+input PerfilFilter {
+    id: Int
+    nome: String
+}

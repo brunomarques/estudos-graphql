@@ -1,0 +1,8 @@
+type Query {
+    users: [User]
+    user(filter: UserFilter!): User
+    login(filter: LoginUserFilter!): User
+
+    perfis: [Perfil]
+    perfil(filter: PerfilFilter!): Perfil
+}
