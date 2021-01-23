@@ -73,7 +73,7 @@ export default {
                                 password: $password
                             }
                         ) {
-                            id email token perfis{ nome }
+                            id nome email token perfis{ nome }
                         }
                     }
                 `,

@@ -9,7 +9,7 @@ module.exports = {
         //Payload do JWT
         const userInfo = {
             id: user.id,
-            name: user.nome,
+            nome: user.nome,
             email: user.email,
             perfis: perfis.map(p => p.nome),
             iat: now, 
